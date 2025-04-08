@@ -3,87 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web de Ejemplo</title>
+    <title>Cool Oats</title>
     <style>
-        /* Estilo general */
+        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        /* Cabecera */
-        header {
-            text-align: center;
             background-color: #f4f4f4;
-            padding: 20px 0;
         }
 
         /* Barra de navegación */
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li button {
-            background-color: #007bff;
-            color: white;
-            border: none;
+        header {
+            background-color: #4CB0D9;
             padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-button {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #3d94d8;
+        }
+
+        /* Sección principal */
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .product {
+            text-align: center;
+            width: 22%;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .shop-now {
+            background-color: #4CB0D9;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
         }
 
-        nav ul li button:hover {
-            background-color: #0056b3;
+        .shop-now:hover {
+            background-color: #3d94d8;
         }
 
         /* Pie de página */
         footer {
             text-align: center;
-            background-color: #222;
+            padding: 10px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+
+        footer button {
+            background-color: #4CB0D9;
             color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer button:hover {
+            background-color: #3d94d8;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><button onclick="navigate('Acerca')">Acerca</button></li>
-                <li><button onclick="navigate('Recetas')">Recetas</button></li>
-                <li><button onclick="navigate('Contacto')">Contacto</button></li>
-            </ul>
+            <button class="nav-button">About</button>
+            <button class="nav-button">Recipes</button>
+            <button class="nav-button">Contact</button>
         </nav>
-        <h1>Bienvenido a Mi Página</h1>
-        <p>Un lugar para disfrutar de recetas deliciosas y contenido inspirador.</p>
     </header>
+
     <main>
-        <section>
-            <h2>Contenido Principal</h2>
-            <p>Aquí puedes agregar la descripción del contenido.</p>
+        <section class="recipe">
+            <h1>Overnight Oats Recipe</h1>
+            <p><strong>Prep time:</strong> 2 mins</p>
+            <p><strong>Yield:</strong> 1 large serving or 2 small</p>
+            <p><strong>Rating:</strong> 4.5 stars</p>
+
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1/3 cup plain Greek yogurt</li>
+                <li>1/2 cup (heaping) rolled oats</li>
+                <li>2/3 cup unsweetened milk of choice</li>
+                <li>1 tablespoon chia seeds or ground flaxmeal</li>
+                <li>1/2 teaspoon vanilla extract</li>
+                <li>Pinch of salt</li>
+                <li>0-2 tablespoons honey or maple syrup</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol>
+                <li>Whisk together all ingredients in a medium-sized mixing bowl.</li>
+                <li>Spoon into a jar with a tight-fitting lid. Close and refrigerate for at least 4 hours, but preferably overnight before eating.</li>
+            </ol>
+
+            <h2>Suggested Dietary Swaps</h2>
+            <ul>
+                <li><strong>Vegan:</strong> Use plant-based milk, plant-based yogurt, and maple syrup for sweetener.</li>
+                <li><strong>Sugar-Free:</strong> Drop the sweetener and add 1/2 mashed ripe banana.</li>
+                <li><strong>Gluten-Free:</strong> Use gluten-free oats.</li>
+            </ul>
+
+            <h2>Recommended Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://github.com/ErickH0715/Final-Test-V3/blob/main/oats.jpg?raw=true" alt="Rolled Oats">
+                    <p>Rolled Oats, $12.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://github.com/ErickH0715/Final-Test-V3/blob/main/chia.jpg?raw=true" alt="Chia Seeds">
+                    <p>Chia Seeds, $15.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://github.com/ErickH0715/Final-Test-V3/blob/main/pecans.jpg?raw=true" alt="Pecans">
+                    <p>Pecans, $13.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://github.com/ErickH0715/Final-Test-V3/blob/main/maple-syrup.jpg?raw=true" alt="Maple Syrup">
+                    <p>Maple Syrup, $15.99</p>
+                </div>
+            </div>
+            <button class="shop-now">Shop Now</button>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Mi Página Web</p>
+        <button>Print Recipe</button>
     </footer>
 
     <script>
-        // Función para manejar la navegación de los botones
-        function navigate(section) {
-            alert('Ir a la sección: ' + section);
-        }
+        // scripts.js
+        document.querySelector('.shop-now').addEventListener('click', function() {
+            alert("¡Redirigiendo a la tienda!");
+        });
     </script>
 </body>
 </html>
+
