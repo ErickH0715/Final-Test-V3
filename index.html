@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Oats</title>
+    <title>Café Delicioso</title>
     <style>
         /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5; /* Fondo neutro */
+            color: #4b2e83; /* Color de texto oscuro */
         }
 
         /* Barra de navegación */
         header {
-            background-color: #4CB0D9;
+            background-color: #3e2723; /* Color marrón oscuro para la temática de café */
             padding: 10px 20px;
         }
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end; /* Alinea los botones a la derecha */
         }
 
         .nav-button {
@@ -31,11 +32,13 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            margin-left: 15px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .nav-button:hover {
-            background-color: #3d94d8;
+            background-color: #4e342e; /* Fondo marrón más claro */
+            color: white;
         }
 
         /* Sección principal */
@@ -44,10 +47,11 @@
             background-color: #fff;
             margin: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2 {
-            color: #333;
+            color: #3e2723; /* Color marrón oscuro para los encabezados */
         }
 
         h1 {
@@ -81,39 +85,41 @@
         }
 
         .shop-now {
-            background-color: #4CB0D9;
+            background-color: #3e2723; /* Color marrón oscuro */
             color: white;
             padding: 10px 20px;
             font-size: 18px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
 
         .shop-now:hover {
-            background-color: #3d94d8;
+            background-color: #4e342e; /* Fondo marrón más claro */
         }
 
         /* Pie de página */
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #fff;
+            background-color: #3e2723;
             margin-top: 20px;
         }
 
         footer button {
-            background-color: #4CB0D9;
-            color: white;
+            background-color: #fff;
+            color: #3e2723;
             padding: 10px 20px;
             font-size: 16px;
-            border: none;
+            border: 1px solid #ccc;
             border-radius: 5px;
             cursor: pointer;
         }
 
         footer button:hover {
-            background-color: #3d94d8;
+            background-color: #4e342e;
+            color: white;
         }
     </style>
 </head>
@@ -192,4 +198,3 @@
     </script>
 </body>
 </html>
-
