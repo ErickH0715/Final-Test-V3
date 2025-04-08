@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Ejemplo</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabecera */
+        header {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        /* Barra de navegación */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav ul li button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="navigate('Acerca')">Acerca</button></li>
+                <li><button onclick="navigate('Recetas')">Recetas</button></li>
+                <li><button onclick="navigate('Contacto')">Contacto</button></li>
+            </ul>
+        </nav>
+        <h1>Bienvenido a Mi Página</h1>
+        <p>Un lugar para disfrutar de recetas deliciosas y contenido inspirador.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Contenido Principal</h2>
+            <p>Aquí puedes agregar la descripción del contenido.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Página Web</p>
+    </footer>
+
+    <script>
+        // Función para manejar la navegación de los botones
+        function navigate(section) {
+            alert('Ir a la sección: ' + section);
+        }
+    </script>
+</body>
+</html>
